@@ -43,6 +43,28 @@ HTTP:
     Ou seja, emendar um commit com esse que está em staged
     git commit --amend
     git log -> comprova que não foi adicionado mais um commit, mas sim reaproveitado
+    O push será necessário usar --force
 
     ***commits são imultáveis***
+
+# Dia 8
+
+## Organização de Terefas
+Fazer muito com pouco e não pouco com muito.
+
+Trabalhar POUCO e ganhar MUITO. 
+Planejar muito, executa pouco.
+Planejar pouco, executa muito.
+** Precisa de Equilíbrio **
+Níveis de organização de tarefas... Do mais simples ao mais sofisticado... Entender o contexto, 
+    Nivel 1: Lembrar do que precisa ser feito de forma simples. (Anotar tarefas no papel) - add progresso (check)
+    Nível 2: Lembrar do que precisa ser feito em grupo. (Lembretes do que precisa ser feito na geladeira) - add progresso (check)
+    Nível 3: Expandir conhecimento. Sistema. Ex: issues no GitHub.
+    Nível 4: Métricas com base no estabelecido no nível 3. Quantas tarefas? Prontas? Pendentes? %?
+
+# Dia 10
+1. Criar Milestones https://github.com/alxss01/clone-tabnews/milestones
+2. Criar issues e vincular ao Milestones: https://github.com/alxss01/clone-tabnews/issues
+3. Editar issue, adicionando tasks: https://github.com/alxss01/clone-tabnews/issues/2
+   1. - [] Ligar sincronização do Editor.
   
