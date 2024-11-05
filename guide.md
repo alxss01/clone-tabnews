@@ -43,6 +43,9 @@ IP
 
 # Rotas públicas
 
+    npm install next
+    npm install react
+    npm install react-dom
     Todos os arquivos criados em page/.. tornam-se rotas publicas.
     Ex: pages/index.js -> site.com/index.js
 
@@ -81,3 +84,51 @@ Nível 4: Métricas com base no estabelecido no nível 3. Quantas tarefas? Pront
 2. Criar issues e vincular ao Milestones: https://github.com/alxss01/clone-tabnews/issues
 3. Editar issue, adicionando tasks: https://github.com/alxss01/clone-tabnews/issues/2
    1. - [] Ligar sincronização do Editor.
+
+# Dia 11
+
+DNS - Domain Name System (Sistema de Nomes de Domínios)
+DNS: "São apelidos para os IP's"
+DNS: Converte domínios google.com.br no respectivo IP, onde está o servidor.
+Cada ponto de conexão possui um IP único. Como se fosse endereço e número.
+Computadores só se conectam por IP!
+Exemplo:
+
+![alt text](image.png)
+
+Processo de resolução de DNS
+![alt text](image-1.png)
+
+Ou seja, conseguimos acessar um site diretamente pelo IP.
+
+## Registrar domínio .com.br:
+
+![alt text](image-2.png)
+
+registrar:
+registro.br
+
+# Dia 13
+
+Status page dos serviços.
+Serve para verificar quando determinado serviço está indisponível e também o SLA de normalidade, incidentes, etc. Para tanto, basta pesquisar o serviço da seguinte maneira:
+
+vercel status (https://www.vercel-status.com/)
+google maps status (https://status.cloud.google.com/maps-platform/)
+aws lambda status
+aws s3 status
+
+\*Lembrado que um serviço com problema pode afetar vários outros, como no caso da aws.
+
+# Dia 14
+
+Leiutra recomendada:
+Issue: Proposta de arquitetura do tabnews: https://github.com/filipedeschamps/tabnews.com.br/issues/12
+
+App para criação de estrutura de pastas: https://ascii-tree-generator.com/
+
+# Dia 15
+
+1. Instalar o Jest: npm install -D jest@29.6.2
+2. Criar script Jest no package.json: "test": "jest"
+3. Criar script Jest Whach no package.json: "test:watch": "jest --watch"
