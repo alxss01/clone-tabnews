@@ -132,3 +132,11 @@ App para criação de estrutura de pastas: https://ascii-tree-generator.com/
 1. Instalar o Jest: npm install -D jest@29.6.2
 2. Criar script Jest no package.json: "test": "jest"
 3. Criar script Jest Whach no package.json: "test:watch": "jest --watch"
+
+# Dia 16
+
+A conveção do .next diz que ao criar uma pasta api dentro da pasta page, automaticamente o conteúdo de api já se torna uma rota pública.
+
+### Promise
+
+Promise: promessa de valor futuro.
