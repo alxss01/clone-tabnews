@@ -94,16 +94,16 @@ Cada ponto de conexão possui um IP único. Como se fosse endereço e número.
 Computadores só se conectam por IP!
 Exemplo:
 
-![alt text](image.png)
+![alt text](../images/image.png)
 
 Processo de resolução de DNS
-![alt text](image-1.png)
+![alt text](../images/image-1.png)
 
 Ou seja, conseguimos acessar um site diretamente pelo IP.
 
 ## Registrar domínio .com.br:
 
-![alt text](image-2.png)
+![alt text](../images/image-2.png)
 
 registrar:
 registro.br
@@ -140,3 +140,18 @@ A conveção do .next diz que ao criar uma pasta api dentro da pasta page, autom
 ### Promise
 
 Promise: promessa de valor futuro.
+
+# Dia 18
+
+### Configurar compose database com postgres
+
+- Executar comando: docker compose -f infra/compose.yaml up
+
+### instalar client do postgres:
+
+- sudo apt update
+- sudo apt install postgresql-client
+
+### Conectar no banco de dados usando linha de comando client psql
+
+- psql --host=localhost --username=postgres --port=5432
