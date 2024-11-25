@@ -155,3 +155,37 @@ Promise: promessa de valor futuro.
 ### Conectar no banco de dados usando linha de comando client psql
 
 - psql --host=localhost --username=postgres --port=5432
+
+# Renomear arquivo usando git
+
+- git mv .env .env.development
+
+# Corrigir push de dados sensíveis no repositório remoto
+
+- Usar git filter
+  https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+
+# BFG para corrigir vazamento de dados sensíveis no repositório
+
+1 - Baixei o arquivo .jar do BFG Repo-Cleaner do repositório e coloquei na mesma pasta que clonarei o projeto.
+
+2 - Clonei meu repositório com o --mirror:
+git clone --mirror git://example.com/repo_problematico.git
+
+3 - Apaguei os arquivos com os comandos:
+java -jar bfg-1.14.0.jar --delete-files cred.json repo_problematico.git
+e
+java -jar bfg-1.14.0.jar --delete-files .env repo_problematico.git
+
+4 - entrar na pasta do repositório problemático:
+cd repo_problematico.git
+
+5 - Rodar os comandos conforme a documentação do BFG:
+git reflog expire --expire=now --all && git gc --prune=now --aggressive
+
+6 - git push
+
+# Configurar caminho realtivo
+
+- NodeJS não tem por padrão uma forma de import dos arquivos, logo precisamos definir exatamente o caminho do import, por exemplo ../../../infra/database.js
+- Por tanto, iremos utilizar um arquivo chamado jsconfig.json para deixar essa configuração transparente e declarar o import dessa maneira infra/database.js
