@@ -189,3 +189,15 @@ git reflog expire --expire=now --all && git gc --prune=now --aggressive
 
 - NodeJS não tem por padrão uma forma de import dos arquivos, logo precisamos definir exatamente o caminho do import, por exemplo ../../../infra/database.js
 - Por tanto, iremos utilizar um arquivo chamado jsconfig.json para deixar essa configuração transparente e declarar o import dessa maneira infra/database.js
+
+# Dia 21
+
+### Banco de dados remoto
+
+- https://supabase.com/ - Login via GitHub
+- https://console.neon.tech/ - Login via GitHub
+- https://cloud.digitalocean.com/databases - Usuário: alexdesouza94@gmail.com Pass: \*\*\*
+
+### Variável de ambiente da Vercel
+
+- Ajustar variável de ambiente para apontar para o banco de dados remoto
