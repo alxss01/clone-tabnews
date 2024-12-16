@@ -201,3 +201,15 @@ git reflog expire --expire=now --all && git gc --prune=now --aggressive
 ### Variável de ambiente da Vercel
 
 - Ajustar variável de ambiente para apontar para o banco de dados remoto
+
+# Dia 22
+
+### Criar Migrations
+
+1. Instalar Depenencia: npm install node-pg-migrate@6.2.2
+2. Configurar package.json: "migration:create": "node-pg-migrate -m infra/migrations create"
+3. Executar script passando o nome: first migration test
+   1. npm run migration:create first migration test
+4. Aplicar migrations:
+   1. "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up" (O banco de dados precisa estar em execução)
+   2.
